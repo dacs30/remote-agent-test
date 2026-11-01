@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore how a remote coding agent helps turn ideas into websites, code changes, and approval-ready releases.">
+  <title>Remote Agent Test</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="container" aria-label="Main navigation"><a class="brand" href="#home">Remote Agent Test</a><a href="#explore">Explore capabilities</a></nav>
+    <div class="container hero" id="home">
+      <p class="eyebrow">Your ideas. A remote coding teammate.</p>
+      <h1>From a chat message<br>to something real.</h1>
+      <p>Create websites, explore projects, and make focused improvements with a remote agent. You stay in control of builds and publishing.</p>
+      <a class="button" href="#explore">See what is possible</a>
+    </div>
+  </header>
+  <main class="container">
+    <section id="explore" aria-labelledby="explore-title">
+      <p class="eyebrow">Capability explorer</p>
+      <h2 id="explore-title">What would you like to do?</h2>
+      <p>Choose a capability to see an example request and how the agent helps.</p>
+      <div class="workspace">
+        <div class="choices" role="group" aria-label="Choose a capability">
+          <button type="button" data-capability="create" aria-pressed="true">01 / Create a website</button>
+          <button type="button" data-capability="explore" aria-pressed="false">02 / Explore a project</button>
+          <button type="button" data-capability="improve" aria-pressed="false">03 / Improve the code</button>
+          <button type="button" data-capability="validate" aria-pressed="false">04 / Prepare validation</button>
+          <button type="button" data-capability="publish" aria-pressed="false">05 / Prepare a release</button>
+        </div>
+        <article class="demo" aria-live="polite" aria-atomic="true">
+          <span class="badge">Illustrative demo, not a live agent</span>
+          <h3 id="capability-title">Create a website</h3>
+          <p class="label">Example message</p>
+          <blockquote id="example">Create a landing page with a blue header and feature cards.</blockquote>
+          <p class="label">How the agent helps</p>
+          <p id="response">Creates a project, writes the HTML and CSS, and adds a responsive layout you can refine through chat.</p>
+          <p class="boundary" id="boundary">Files are saved in your selected owner workspace. Publishing is a separate approval step.</p>
+        </article>
+      </div>
+      <noscript><p>The interactive examples need JavaScript. A remote agent can create websites, read and search project source, improve code, and prepare builds or publishing for human approval.</p></noscript>
+    </section>
+    <section class="workflow" aria-labelledby="workflow-title">
+      <h2 id="workflow-title">A simple workflow. Clear boundaries.</h2>
+      <div class="steps">
+        <article><span class="step">1</span><h3>Describe your goal</h3><p>Ask for a new page, a focused change, or an explanation of your project.</p></article>
+        <article><span class="step">2</span><h3>Let the agent work</h3><p>The agent reads relevant files and saves scoped changes in the owner workspace.</p></article>
+        <article><span class="step">3</span><h3>Approve sensitive steps</h3><p>Builds and tests need human approval. Publishing needs a separate human confirmation.</p></article>
+      </div>
+    </section>
+    <aside class="notice"><strong>A showcase, not a connected chat app.</strong> This page sends no messages, runs no commands, and requests no credentials. All examples are local and illustrative.</aside>
+  </main>
+  <footer class="container">Remote Agent Test / Built for ideas that travel.</footer>
+</body>
+</html>
